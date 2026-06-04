@@ -2090,3 +2090,20 @@ main#main-content {
 .mobile-nav.open {
   display: flex;
 }
+
+/* ============================================================
+   FIX: Gray band — body background white, hero uses padding not margin
+   ============================================================ */
+body {
+  background-color: #ffffff !important;
+}
+
+.hybrid-hero {
+  margin-top: 0 !important;
+  padding-top: 70px !important;
+}
+
+main#main-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
