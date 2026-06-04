@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modern Website Design & Development | i5 Creative | Richmond, VA</title>
-  <meta name="description" content="i5 Creative builds modern websites for small and midsize businesses in Richmond, VA. Senior-level design and development since 1986.">
+  <meta name="description"
+    content="i5 Creative builds modern websites for small and midsize businesses in Richmond, VA. Senior-level design and development since 1986.">
   <link rel="canonical" href="https://www.i5creative.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
   <style>
-
     /* =====================================================
        RESET
     ===================================================== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 16px; -webkit-font-smoothing: antialiased; }
-    body { font-family: 'Montserrat', sans-serif; background: #ffffff; color: #111111; overflow-x: hidden; }
-    img { max-width: 100%; height: auto; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ffffff;
+      color: #111111;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
 
     /* =====================================================
        VARIABLES
     ===================================================== */
     :root {
-      --red:        #F84525;
-      --black:      #111111;
-      --white:      #ffffff;
-      --gray:       #888888;
-      --olive-dk:   #B2B15E;
-      --olive-lt:   #D9D9A7;
+      --red: #F84525;
+      --black: #111111;
+      --white: #ffffff;
+      --gray: #888888;
+      --olive-dk: #B2B15E;
+      --olive-lt: #D9D9A7;
       --nav-height: 70px;
     }
 
@@ -40,7 +70,9 @@
     ===================================================== */
     .nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: var(--nav-height);
       background: #ffffff;
       border-bottom: 1px solid #e8e8e8;
@@ -70,9 +102,19 @@
       white-space: nowrap;
     }
 
-    .nav-logo-text .name { color: var(--olive-dk); }
-    .nav-logo-text .pipe { color: var(--olive-lt); margin: 0 4px; }
-    .nav-logo-text .tag  { color: var(--olive-lt); font-weight: 400; }
+    .nav-logo-text .name {
+      color: var(--olive-dk);
+    }
+
+    .nav-logo-text .pipe {
+      color: var(--olive-lt);
+      margin: 0 4px;
+    }
+
+    .nav-logo-text .tag {
+      color: var(--olive-lt);
+      font-weight: 400;
+    }
 
     .nav-links {
       display: flex;
@@ -89,7 +131,9 @@
       transition: color 0.2s;
     }
 
-    .nav-links a:hover { color: var(--black); }
+    .nav-links a:hover {
+      color: var(--black);
+    }
 
     .nav-cta {
       background: var(--red);
@@ -106,8 +150,13 @@
       flex-shrink: 0;
     }
 
-    .nav-cta:hover { background: #d93820; }
-    .nav-cta::after { content: '→'; }
+    .nav-cta:hover {
+      background: #d93820;
+    }
+
+    .nav-cta::after {
+      content: '→';
+    }
 
     /* =====================================================
        HERO PANEL
@@ -150,7 +199,9 @@
       margin-bottom: 24px;
     }
 
-    .hero-copy p:last-child { margin-bottom: 0; }
+    .hero-copy p:last-child {
+      margin-bottom: 0;
+    }
 
     .hero-copy strong {
       font-weight: 700;
@@ -188,7 +239,9 @@
       margin-bottom: 32px;
     }
 
-    .manifesto-inner p:last-child { margin-bottom: 0; }
+    .manifesto-inner p:last-child {
+      margin-bottom: 0;
+    }
 
     /* =====================================================
        SECTION: PROBLEM
@@ -229,19 +282,24 @@
     .problem-list li {
       font-size: clamp(18px, 1.8vw, 24px);
       font-weight: 700;
-      color: rgba(255,255,255,0.25);
+      color: rgba(255, 255, 255, 0.25);
       padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
       letter-spacing: -0.01em;
       transition: color 0.3s;
     }
 
-    .problem-list li:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-    .problem-list li:hover { color: #ffffff; }
+    .problem-list li:first-child {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .problem-list li:hover {
+      color: #ffffff;
+    }
 
     .section-problem .right p {
       font-size: clamp(16px, 1.4vw, 19px);
-      color: rgba(255,255,255,0.6);
+      color: rgba(255, 255, 255, 0.6);
       line-height: 1.75;
       margin-bottom: 20px;
     }
@@ -292,10 +350,20 @@
       padding-left: 20px;
     }
 
-    .no-list li:first-child { border-top: 1px solid #e8e8e8; }
-    .no-list li::before { content: '—'; position: absolute; left: 0; color: var(--red); }
+    .no-list li:first-child {
+      border-top: 1px solid #e8e8e8;
+    }
 
-    .feature-list { margin-top: 32px; }
+    .no-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--red);
+    }
+
+    .feature-list {
+      margin-top: 32px;
+    }
 
     .feature-item {
       display: flex;
@@ -305,14 +373,22 @@
       border-bottom: 1px solid #e8e8e8;
     }
 
-    .feature-item:last-child { border-bottom: none; }
+    .feature-item:last-child {
+      border-bottom: none;
+    }
 
     .check {
-      width: 20px; height: 20px;
+      width: 20px;
+      height: 20px;
       background: var(--red);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 2px;
-      font-size: 11px; font-weight: 700; color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-size: 11px;
+      font-weight: 700;
+      color: white;
     }
 
     .feature-item span {
@@ -330,7 +406,10 @@
       border-top: 1px solid #e8e8e8;
     }
 
-    .section-process .inner { max-width: 1200px; margin: 0 auto; }
+    .section-process .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
     .section-process h2 {
       font-size: clamp(28px, 3vw, 42px);
@@ -353,19 +432,41 @@
       transition: background 0.3s;
     }
 
-    .process-step:hover { background: #111111; }
-    .process-step:hover h3,
-    .process-step:hover p { color: #ffffff; }
-    .process-step:hover p { color: rgba(255,255,255,0.6); }
-
-    .step-num {
-      font-size: 11px; font-weight: 700;
-      letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--red); display: block; margin-bottom: 24px;
+    .process-step:hover {
+      background: #111111;
     }
 
-    .process-step h3 { font-size: 20px; margin-bottom: 12px; transition: color 0.3s; }
-    .process-step p  { font-size: 14px; line-height: 1.65; color: #888888; transition: color 0.3s; }
+    .process-step:hover h3,
+    .process-step:hover p {
+      color: #ffffff;
+    }
+
+    .process-step:hover p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .step-num {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .process-step h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      transition: color 0.3s;
+    }
+
+    .process-step p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #888888;
+      transition: color 0.3s;
+    }
 
     /* =====================================================
        SECTION: TRUST
@@ -377,37 +478,62 @@
     }
 
     .section-trust .inner {
-      max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 80px; align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
     }
 
     .section-trust h2 {
       font-size: clamp(24px, 2.5vw, 36px);
-      font-weight: 700; letter-spacing: -0.02em;
-      line-height: 1.15; margin-bottom: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 24px;
     }
 
     .section-trust p {
-      font-size: 16px; color: #888888;
-      line-height: 1.75; margin-bottom: 16px;
+      font-size: 16px;
+      color: #888888;
+      line-height: 1.75;
+      margin-bottom: 16px;
     }
 
     .stat-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1px; background: #e8e8e8; border: 1px solid #e8e8e8;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: #e8e8e8;
+      border: 1px solid #e8e8e8;
     }
 
-    .stat { background: #ffffff; padding: 32px; }
+    .stat {
+      background: #ffffff;
+      padding: 32px;
+    }
 
     .stat .num {
       font-size: clamp(36px, 4vw, 52px);
-      font-weight: 700; letter-spacing: -0.04em;
-      line-height: 1; color: #111111; display: block;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: #111111;
+      display: block;
     }
 
-    .stat .num em { font-style: normal; color: var(--red); }
-    .stat .lbl { font-size: 13px; color: #888888; margin-top: 6px; display: block; }
+    .stat .num em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .stat .lbl {
+      font-size: 13px;
+      color: #888888;
+      margin-top: 6px;
+      display: block;
+    }
 
     /* =====================================================
        SECTION: NEXT SERVICES
@@ -417,22 +543,30 @@
       padding: 120px 80px;
     }
 
-    .section-next .inner { max-width: 1200px; margin: 0 auto; }
+    .section-next .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
     .section-next h2 {
       font-size: clamp(28px, 3vw, 42px);
-      font-weight: 700; letter-spacing: -0.02em;
-      color: #ffffff; margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 16px;
     }
 
-    .section-next > .inner > p {
-      color: rgba(255,255,255,0.5);
-      max-width: 500px; margin-bottom: 60px;
+    .section-next>.inner>p {
+      color: rgba(255, 255, 255, 0.5);
+      max-width: 500px;
+      margin-bottom: 60px;
     }
 
     .next-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 1px; background: rgba(255,255,255,0.08);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .next-item {
@@ -442,10 +576,27 @@
       transition: border-color 0.3s;
     }
 
-    .next-item:hover { border-top-color: var(--red); }
-    .next-item .icon { font-size: 24px; margin-bottom: 16px; display: block; }
-    .next-item h3 { font-size: 16px; color: #ffffff; margin-bottom: 10px; }
-    .next-item p  { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+    .next-item:hover {
+      border-top-color: var(--red);
+    }
+
+    .next-item .icon {
+      font-size: 24px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .next-item h3 {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .next-item p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6;
+    }
 
     /* =====================================================
        FINAL CTA
@@ -459,45 +610,64 @@
 
     .section-cta::before {
       content: 'i5';
-      position: absolute; right: -2%; top: 50%;
+      position: absolute;
+      right: -2%;
+      top: 50%;
       transform: translateY(-50%);
       font-size: clamp(200px, 25vw, 380px);
-      font-weight: 700; letter-spacing: -0.05em;
-      color: rgba(0,0,0,0.12); line-height: 1;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      color: rgba(0, 0, 0, 0.12);
+      line-height: 1;
       pointer-events: none;
     }
 
     .section-cta .inner {
-      max-width: 1200px; margin: 0 auto;
-      position: relative; z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
       max-width: 700px;
     }
 
     .section-cta h2 {
       font-size: clamp(28px, 3.5vw, 48px);
-      font-weight: 700; color: #ffffff;
-      line-height: 1.1; letter-spacing: -0.02em;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
       margin-bottom: 20px;
     }
 
     .section-cta p {
       font-size: clamp(16px, 1.4vw, 19px);
-      color: rgba(255,255,255,0.8);
-      line-height: 1.65; margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.65;
+      margin-bottom: 40px;
     }
 
     .btn-outline-white {
-      display: inline-flex; align-items: center; gap: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 16px 32px;
-      font-size: 11px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: #ffffff;
-      border: 1.5px solid rgba(255,255,255,0.5);
+      border: 1.5px solid rgba(255, 255, 255, 0.5);
       transition: all 0.3s;
     }
 
-    .btn-outline-white::after { content: '→'; }
-    .btn-outline-white:hover { background: #ffffff; color: var(--red); }
+    .btn-outline-white::after {
+      content: '→';
+    }
+
+    .btn-outline-white:hover {
+      background: #ffffff;
+      color: var(--red);
+    }
 
     /* =====================================================
        FOOTER
@@ -508,51 +678,81 @@
     }
 
     .footer-grid {
-      max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 80px; margin-bottom: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 60px;
     }
 
     .footer-logo {
-      font-size: 22px; font-weight: 700;
-      letter-spacing: -0.02em; color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
       margin-bottom: 12px;
     }
 
-    .footer-logo span { color: var(--red); }
-    .footer-tagline { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.5; margin-bottom: 20px; }
+    .footer-logo span {
+      color: var(--red);
+    }
+
+    .footer-tagline {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
 
     .footer-contact a {
-      display: block; font-size: 14px;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 6px; transition: color 0.2s;
-    }
-
-    .footer-contact a:hover { color: var(--red); }
-
-    .footer-col h4 {
-      font-size: 11px; font-weight: 700;
-      letter-spacing: 0.12em; text-transform: uppercase;
-      color: rgba(255,255,255,0.3); margin-bottom: 20px;
-    }
-
-    .footer-col li { margin-bottom: 10px; }
-
-    .footer-col a {
-      font-size: 14px; color: rgba(255,255,255,0.6);
+      display: block;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 6px;
       transition: color 0.2s;
     }
 
-    .footer-col a:hover { color: #ffffff; }
-
-    .footer-bottom {
-      max-width: 1200px; margin: 0 auto;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding-top: 28px;
-      display: flex; justify-content: space-between;
+    .footer-contact a:hover {
+      color: var(--red);
     }
 
-    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+    .footer-col h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+    }
 
     /* =====================================================
        RESPONSIVE
@@ -564,40 +764,87 @@
         padding: 48px 40px;
         gap: 32px;
       }
-      .hero-logo { grid-column: 1; grid-row: 1; }
-      .hero-photo { grid-column: 2; grid-row: 1 / 3; }
-      .hero-copy  { grid-column: 1; grid-row: 2; }
+
+      .hero-logo {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .hero-photo {
+        grid-column: 2;
+        grid-row: 1 / 3;
+      }
+
+      .hero-copy {
+        grid-column: 1;
+        grid-row: 2;
+      }
 
       .section-problem .inner,
       .section-relief .inner,
-      .section-trust .inner { grid-template-columns: 1fr; gap: 48px; }
+      .section-trust .inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
 
       .process-grid,
-      .next-grid { grid-template-columns: repeat(2, 1fr); }
+      .next-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+      }
     }
 
     @media (max-width: 768px) {
-      .nav { padding: 0 24px; }
-      .nav-links { display: none; }
-      .hero { grid-template-columns: 1fr; padding: 40px 24px; }
-      .hero-photo { grid-column: 1; grid-row: 2; }
-      .hero-copy  { grid-column: 1; grid-row: 3; }
+      .nav {
+        padding: 0 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+      }
+
+      .hero-photo {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .hero-copy {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
       .section-problem,
       .section-relief,
       .section-process,
       .section-trust,
       .section-next,
       .section-cta,
-      .footer { padding-left: 24px; padding-right: 24px; }
-      .process-grid,
-      .next-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-    }
+      .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
 
+      .process-grid,
+      .next-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -630,7 +877,8 @@
         <img src="hybrid.png" alt="The i5 Creative team — a marketing designer and a web developer">
       </div>
       <div class="hero-copy">
-        <p>Could there be such a thing as a <strong>marketing design firm</strong> well versed in the <em class="red">science</em> of web development?</p>
+        <p>TESTCould there be such a thing as a <strong>marketing design firm</strong> well versed in the <em
+            class="red">science</em> of web development?</p>
         <p>Or a <strong>web development company</strong> skilled in the <em class="red">art</em> of communication?</p>
         <p>Meet the new hybrid.</p>
       </div>
@@ -639,8 +887,10 @@
     <!-- MANIFESTO PANEL -->
     <section class="manifesto" aria-label="i5 Creative mission">
       <div class="manifesto-inner">
-        <p>i5 creative is a multi-disciplinary marketing design firm dedicated to adapting the vast capabilities of communication to serve the purposes of companies like yours.</p>
-        <p>Together, we can transform your options into opportunities, giving you the power to see, think and act in innovative new ways.</p>
+        <p>i5 creative is a multi-disciplinary marketing design firm dedicated to adapting the vast capabilities of
+          communication to serve the purposes of companies like yours.</p>
+        <p>Together, we can transform your options into opportunities, giving you the power to see, think and act in
+          innovative new ways.</p>
         <p>Isn't that the point?</p>
       </div>
     </section>
@@ -734,10 +984,13 @@
         <div>
           <span class="section-label">About i5 Creative</span>
           <h2 id="trust-heading">Enterprise-level capability. Small-business accessible.</h2>
-          <p>After years of working with major entertainment, advertising, and technology clients in Los Angeles, we built a different kind of creative company.</p>
-          <p>One focused on clarity. Simplicity. Practical solutions. And helping businesses communicate more effectively.</p>
+          <p>After years of working with major entertainment, advertising, and technology clients in Los Angeles, we
+            built a different kind of creative company.</p>
+          <p>One focused on clarity. Simplicity. Practical solutions. And helping businesses communicate more
+            effectively.</p>
           <p>Without the agency circus.</p>
-          <a href="about.html" class="btn-outline-white" style="margin-top:32px; border-color:#e8e8e8; color:#111111;">Our Story</a>
+          <a href="about.html" class="btn-outline-white"
+            style="margin-top:32px; border-color:#e8e8e8; color:#111111;">Our Story</a>
         </div>
         <div class="stat-grid">
           <div class="stat"><span class="num">40<em>+</em></span><span class="lbl">Years in business</span></div>
@@ -755,10 +1008,22 @@
         <h2 id="next-heading">Your website is only the beginning.</h2>
         <p>A modern website creates opportunity. When you're ready, i5 can also help with:</p>
         <div class="next-grid">
-          <div class="next-item"><span class="icon">📥</span><h3>Lead Capture</h3><p>Automatically collect and organize inquiries so no opportunity falls through the cracks.</p></div>
-          <div class="next-item"><span class="icon">⚡</span><h3>Automated Follow-Up</h3><p>Respond to new leads instantly — even at 2 AM — with smart, personalized messaging.</p></div>
-          <div class="next-item"><span class="icon">📅</span><h3>Appointment Booking</h3><p>Let customers schedule directly, reducing back-and-forth and missed opportunities.</p></div>
-          <div class="next-item"><span class="icon">🤖</span><h3>AI-Assisted Communication</h3><p>Intelligent systems that help you stay in front of customers without the manual effort.</p></div>
+          <div class="next-item"><span class="icon">📥</span>
+            <h3>Lead Capture</h3>
+            <p>Automatically collect and organize inquiries so no opportunity falls through the cracks.</p>
+          </div>
+          <div class="next-item"><span class="icon">⚡</span>
+            <h3>Automated Follow-Up</h3>
+            <p>Respond to new leads instantly — even at 2 AM — with smart, personalized messaging.</p>
+          </div>
+          <div class="next-item"><span class="icon">📅</span>
+            <h3>Appointment Booking</h3>
+            <p>Let customers schedule directly, reducing back-and-forth and missed opportunities.</p>
+          </div>
+          <div class="next-item"><span class="icon">🤖</span>
+            <h3>AI-Assisted Communication</h3>
+            <p>Intelligent systems that help you stay in front of customers without the manual effort.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -767,7 +1032,8 @@
     <section class="section-cta" aria-labelledby="cta-heading">
       <div class="inner">
         <h2 id="cta-heading">Let's make your business look as good online as it does in real life.</h2>
-        <p>Whether your current website is outdated, underperforming, or nonexistent, we can help you launch a modern professional web presence quickly and affordably. No pressure. No hard sell.</p>
+        <p>Whether your current website is outdated, underperforming, or nonexistent, we can help you launch a modern
+          professional web presence quickly and affordably. No pressure. No hard sell.</p>
         <a href="contact.html" class="btn-outline-white">Request a Free Website Review</a>
       </div>
     </section>
@@ -814,4 +1080,5 @@
   </footer>
 
 </body>
+
 </html>
