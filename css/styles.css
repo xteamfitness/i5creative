@@ -1879,3 +1879,116 @@ hr.section-rule {
     grid-row: 3;
   }
 }
+
+/* ============================================================
+   REVISION 2 — All 7 fixes
+   ============================================================ */
+
+/* 1. Header: white background, 70px height */
+.site-header {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  height: 70px !important;
+}
+
+:root {
+  --header-height: 70px;
+}
+
+/* 2. Logo text: all light olive */
+.logo-name {
+  color: #B2B15E !important;
+}
+.logo-divider {
+  color: #D9D9A7 !important;
+}
+.logo-tagline {
+  color: #D9D9A7 !important;
+}
+
+/* 3 & 5. Hybrid hero: sits directly under nav, no extra margin-top,
+         full viewport height minus header */
+.hybrid-hero {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.hybrid-hero-inner {
+  padding: var(--space-xl) var(--gutter) !important;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  grid-template-columns: 220px 1fr 1.6fr !important;
+  gap: var(--space-xl) !important;
+}
+
+/* 4. Remove vertical divider between photo and copy */
+.hybrid-hero-copy {
+  border-left: none !important;
+  padding-left: var(--space-md) !important;
+}
+
+/* 6. Scale up logo mark and photo */
+.hybrid-hero-logo img {
+  width: 200px !important;
+}
+
+.hybrid-hero-photo img {
+  max-height: 600px !important;
+}
+
+/* 6. Scale up copy text */
+.hybrid-hero-line {
+  font-size: clamp(20px, 2vw, 28px) !important;
+  margin-bottom: var(--space-md) !important;
+  line-height: 1.5 !important;
+}
+
+.hybrid-hero-tagline {
+  font-size: clamp(20px, 2vw, 28px) !important;
+  margin-top: var(--space-md) !important;
+}
+
+/* 3. Kill the old hero section's margin-top (was pushing a gap) */
+.hero {
+  margin-top: 0 !important;
+}
+
+/* Also kill the old hero's ::before black panel overlay */
+.hero::before {
+  display: none !important;
+}
+
+/* 7. Manifesto panel: 650px tall, larger font */
+.manifesto-panel {
+  min-height: 650px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: var(--space-xl) 0 !important;
+}
+
+.manifesto-inner p {
+  font-size: clamp(18px, 1.8vw, 24px) !important;
+  line-height: 1.7 !important;
+  margin-bottom: var(--space-md) !important;
+}
+
+.manifesto-close {
+  font-size: clamp(20px, 2vw, 28px) !important;
+}
+
+
+/* Fix old hero inner padding — no longer the first section */
+.hero-inner {
+  padding-top: var(--space-2xl) !important;
+}
+
+/* Ensure main starts right after fixed header */
+main#main-content {
+  padding-top: 70px;
+}
