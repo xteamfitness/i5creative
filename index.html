@@ -36,7 +36,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Schema: LocalBusiness -->
   <script type="application/ld+json">
@@ -88,18 +88,25 @@
        ============================================================ -->
   <header class="site-header" role="banner">
     <div class="header-inner">
-      <a href="index.html" class="header-logo" aria-label="i5 Creative Home">
-        i5<span>.</span>
+
+      <!-- Logo lockup -->
+      <a href="index.html" class="header-logo" aria-label="i5 Creative — Ideas that get to the point">
+        <img src="i5_logo.png" alt="i5 Creative logo mark" class="header-logo-img">
+        <span class="header-logo-text">
+          <span class="logo-name">i5 creative</span>
+          <span class="logo-divider"> | </span>
+          <span class="logo-tagline">ideas that get to the point</span>
+        </span>
       </a>
 
       <nav class="header-nav" role="navigation" aria-label="Primary navigation">
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="#" aria-label="Client access login — coming soon">Client Access</a>
       </nav>
 
       <div class="header-cta">
-        <a href="tel:+18049208086" class="header-phone" aria-label="Call i5 Creative: 804-920-8086">804.920.8086</a>
         <a href="contact.html" class="btn btn-primary" aria-label="Request a free website review">Free Review</a>
       </div>
 
@@ -116,9 +123,10 @@
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+    <a href="#">Client Access</a>
     <div class="mobile-nav-cta">
       <a href="tel:+18049208086" class="btn btn-outline" style="margin-bottom:12px; display:inline-flex;">804.920.8086</a><br>
-      <a href="contact.html" class="btn btn-primary">Request a Free Review</a>
+      <a href="contact.html" class="btn btn-primary">Free Review</a>
     </div>
   </nav>
 
@@ -127,6 +135,54 @@
        ============================================================ -->
   <main id="main-content">
 
+    <!-- ============================================================
+         PANEL 1 — HYBRID HERO (new)
+         ============================================================ -->
+    <section class="hybrid-hero" aria-labelledby="hybrid-hero-heading">
+      <div class="hybrid-hero-inner">
+
+        <!-- Left: logo mark -->
+        <div class="hybrid-hero-logo" aria-hidden="true">
+          <img src="i5_logo.png" alt="">
+        </div>
+
+        <!-- Center: people photo -->
+        <div class="hybrid-hero-photo">
+          <img src="hybrid.png" alt="The i5 Creative team — a marketing designer and a web developer">
+        </div>
+
+        <!-- Right: copy -->
+        <div class="hybrid-hero-copy">
+          <p class="hybrid-hero-line">
+            Could there be such a thing as a <strong>marketing design firm</strong> well versed in the <em class="red">science</em> of web development?
+          </p>
+          <p class="hybrid-hero-line">
+            Or a <strong>web development company</strong> skilled in the <em class="red">art</em> of communication?
+          </p>
+          <p class="hybrid-hero-tagline" id="hybrid-hero-heading">Meet the new hybrid.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PANEL 2 — MANIFESTO (new)
+         ============================================================ -->
+    <section class="manifesto-panel" aria-labelledby="manifesto-heading">
+      <div class="manifesto-inner">
+        <p id="manifesto-heading">
+          i5 creative is a multi-disciplinary marketing design firm dedicated to adapting the vast capabilities of communication to serve the purposes of companies like yours.
+        </p>
+        <p>
+          Together, we can transform your options into opportunities, giving you the power to see, think and act in innovative new ways.
+        </p>
+        <p class="manifesto-close">Isn't that the point?</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ORIGINAL HERO — pushed down
+         ============================================================ -->
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-inner">
@@ -473,6 +529,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
