@@ -2079,3 +2079,14 @@ main#main-content {
   margin-top: 8px !important;
 }
 
+
+/* ============================================================
+   FIX: Mobile nav hidden at all sizes by default
+   (only shown when .open class is toggled by JS on mobile)
+   ============================================================ */
+.mobile-nav {
+  display: none;
+}
+.mobile-nav.open {
+  display: flex;
+}
